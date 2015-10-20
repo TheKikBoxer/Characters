@@ -15,8 +15,11 @@ import java.awt.event.MouseEvent;
  * @author Liam
  */
 class CharacterEnvironment extends Environment {
+    
+    private Pikachu george;
 
     public CharacterEnvironment() {
+        george = new Pikachu(100, 100);
     }
 
     @Override
@@ -41,6 +44,9 @@ class CharacterEnvironment extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
+        if (george != null) {
+            george.draw(graphics);
+        }
     }
     
 }
