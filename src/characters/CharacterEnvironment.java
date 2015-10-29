@@ -16,10 +16,11 @@ import java.awt.event.MouseEvent;
  */
 class CharacterEnvironment extends Environment {
     
-    private Pikachu george;
+    private Pikachu george, fred;
 
     public CharacterEnvironment() {
-        george = new Pikachu(100, 100);
+        george = new Pikachu(50, 50, 400, 400);
+        fred = new Pikachu(500, 100, 200, 200);
     }
 
     @Override
@@ -47,6 +48,10 @@ class CharacterEnvironment extends Environment {
         if (george != null) {
             george.draw(graphics);
         }
+        if (fred != null) {
+            fred.draw(graphics);
+        }
     }
+    
     
 }
