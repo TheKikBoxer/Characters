@@ -6,6 +6,7 @@
 package characters;
 
 import environment.Environment;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -21,6 +22,7 @@ class CharacterEnvironment extends Environment {
     public CharacterEnvironment() {
         george = new Pikachu(50, 50, 400, 400);
         fred = new Pikachu(500, 100, 200, 200);
+        this.setBackground(Color.WHITE);
     }
 
     @Override
@@ -50,8 +52,11 @@ class CharacterEnvironment extends Environment {
         }
         if (fred != null) {
             fred.draw(graphics);
+     
         }
+        
     }
+    
     
     
 }
